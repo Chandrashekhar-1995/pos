@@ -3,7 +3,7 @@ import morgan from "morgan";
 import bodyParser from "body-parser";
 import cors from "cors";
 import dotenv from "dotenv";
-import connectDB from "./db/config.js";
+import { connectDB } from "./db/config.js";
 
 // dotenv config
 dotenv.config()
@@ -25,7 +25,7 @@ app.use(morgan("dev"));
 
 //routes
 app.get('/', (req, res) => {
-    req.setd("<h1>POS BACKEND</h1>")
+    req.send("<h1>POS BACKEND</h1>")
 });
 
 

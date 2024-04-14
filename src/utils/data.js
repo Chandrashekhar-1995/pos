@@ -1,0 +1,95 @@
+const items = [
+    {
+        ietmCode: "1",
+        name: "ADC",
+        purchasePrice: 1,
+        salePrice: 3,
+        minSalePrice: 2,
+        mrp: 10,
+        unit: "pcs",
+        stock: 10,
+        isSaleDiscount: false,
+        description: "",
+        imageUrl: ""
+    },
+    {
+        ietmCode: "2",
+        name: "ASD",
+        purchasePrice: 123,
+        salePrice: 200,
+        minSalePrice: 150,
+        mrp: 1034,
+        unit: "pcs",
+        stock: 10,
+        isSaleDiscount: false,
+        description: "",
+        imageUrl: ""
+    },
+    {
+        ietmCode: "3",
+        name: "VDVG",
+        purchasePrice: 231,
+        salePrice: 400,
+        minSalePrice: 300,
+        mrp: 1220,
+        unit: "pcs",
+        stock: 10,
+        isSaleDiscount: false,
+        description: "",
+        imageUrl: ""
+    },
+    {
+        ietmCode: "4",
+        name: "DVDFVB",
+        purchasePrice: 421,
+        salePrice: 600,
+        minSalePrice: 500,
+        mrp: 1230,
+        unit: "pcs",
+        stock: 10,
+        isSaleDiscount: false,
+        description: "",
+        imageUrl: ""
+    },
+    {
+        ietmCode: "5",
+        name: "SDV",
+        purchasePrice: 111,
+        salePrice: 222,
+        minSalePrice: 150,
+        mrp: 13210,
+        unit: "pcs",
+        stock: 10,
+        isSaleDiscount: false,
+        description: "SDFKJDKLJGVBJ KJSZDBHFJKVHBJDS",
+        imageUrl: ""
+    },
+    {
+        ietmCode: "6",
+        name: "DSVCX",
+        purchasePrice: 421,
+        salePrice: 523,
+        minSalePrice: 450,
+        mrp: 1320,
+        unit: "pcs",
+        stock: 10,
+        isSaleDiscount: false,
+        description: "",
+        imageUrl: ""
+    },
+    {
+        ietmCode: "7",
+        name: "CXZCVD",
+        purchasePrice: 1,
+        salePrice: 3,
+        minSalePrice: 2,
+        mrp: 1320,
+        unit: "pcs",
+        stock: 10,
+        isSaleDiscount: false,
+        description: "",
+        imageUrl: ""
+    },
+];
+
+export default items;

@@ -1,35 +1,11 @@
-This is my first backend project for learning porpose
-add pretter config
-    - create mongodb atlus account
-    - install mongoose express dotenv
-    - connect to mongo atlas
-    - Install cors and cookie-parser
-    - Setup cors in app.js
-    - Write Api Error handler utility fn
-    - User Model Schema
-    - Video Model Schema
-    - Install mongoose-aggregate-paginate-v2
-    - Install bcrypt and jsonwebtoken
-    - write methods
-    - Install cloudinary and multer
-    - write code for cloudinary 
-    - Write code for multer middleware
-    - User controller
-    - Create user Routes
-    - Route checked ok
-    - Ragistring User done
-    - Setup Login 
-    - Logout setup
-    - Add refresh token end point
-    - Add subscription model
-    - change current password
-    - get current user
-    - Update Account Details
-    - Update Cover and Avatar Image
-    - User Channel Profile Pipeline
-    - User Watch History Pipeline
-    - Add routes for user controller
-    - Add comment model
-    - Add like model
-    - Add Playlist model
-    - Add Tweet model
+# POS
+
+- Start
+  -- add pretter config
+  -- create mongodb atlus account,
+  -- install mongoose express dotenv
+  -- connect to mongo atlas
+  -- Install cors and cookie-parser
+  -- Setup Server and env
+  -- Setup Item Schema
+  -- connect local mongodb
