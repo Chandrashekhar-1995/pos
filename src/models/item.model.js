@@ -9,14 +9,14 @@ const itemSchema = new Schema({
         trim: true, 
         index: true
     },
-    category: {
-        type: Schema.Types.ObjectId,
-        ref: "Category"
-    },
-    subCategory: {
-        type: Schema.Types.ObjectId,
-        ref: "SubCategory"
-    },
+    // category: {
+    //     type: Schema.Types.ObjectId,
+    //     ref: "Category"
+    // },
+    // subCategory: {
+    //     type: Schema.Types.ObjectId,
+    //     ref: "SubCategory"
+    // },
     name: {
         type: String,
         required: true,
