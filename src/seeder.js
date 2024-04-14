@@ -11,7 +11,7 @@ connectDB();
 const importData = async () => {
     try {
         await Item.deleteMany()
-        const itemData = await Item.insertMany(items)
+        const itemsData = await Item.insertMany(items)
         console.log("Loading successfully");
     } catch (error) {
         console.log(error)
