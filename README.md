@@ -16,3 +16,4 @@
   -- install react in root with name client
   -- install an configure tailwind css
   -- install packages ( react-router-dom axios redux react-redux redux-thunk antd )
+  -- move frontend in saperate repo
