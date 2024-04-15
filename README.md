@@ -14,6 +14,5 @@
   -- create route for get item "http://localhost:8080/api/v1/items/get-item"
   -- add item at "http://localhost:8080/api/v1/items/add-item"
   -- install react in root with name client
-  -- install an configure tailwind css
-  -- install packages ( react-router-dom axios redux react-redux redux-thunk antd )
-  -- move frontend in saperate repo
+  -- all client documention in client's readme.md file
+  --
