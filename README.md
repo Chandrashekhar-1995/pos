@@ -15,3 +15,4 @@
   -- add item at "http://localhost:8080/api/v1/items/add-item"
   -- install react in root with name client
   -- install an configure tailwind css
+  -- install packages ( react-router-dom axios redux react-redux redux-thunk antd )
