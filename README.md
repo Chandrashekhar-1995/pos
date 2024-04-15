@@ -13,3 +13,4 @@
   -- add apiError and apiResponse utils
   -- create route for get item "http://localhost:8080/api/v1/items/get-item"
   -- add item at "http://localhost:8080/api/v1/items/add-item"
+  -- install react in root with name client
