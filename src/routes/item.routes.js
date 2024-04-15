@@ -1,9 +1,11 @@
 import { Router } from "express";
-import {getItemController} from "../controllers/item.controller.js"
+import {getItemController, addItemController} from "../controllers/item.controller.js"
 
 const router = Router();
 
 
 router.route("/get-item").get(getItemController)
+router.route("/add-item").post(addItemController)
+
 
 export default router;
