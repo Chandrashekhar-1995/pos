@@ -15,4 +15,4 @@
   -- add item at "http://localhost:8080/api/v1/items/add-item"
   -- install react in root with name client
   -- all client documention in client's readme.md file
-  --
+  -- Set default layout with ant design

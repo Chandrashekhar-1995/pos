@@ -1,10 +1,11 @@
 import React from 'react'
+import DefaultLayout from '../components/DefaultLayout'
 
 const ItemPage = () => {
   return (
-      <div>
-          <h1>Itel list</h1>
-    </div>
+    <DefaultLayout>
+      <h1>Itel page</h1>
+    </DefaultLayout>
   )
 }
 
