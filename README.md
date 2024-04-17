@@ -16,3 +16,5 @@
   -- install react in root with name client
   -- all client documention in client's readme.md file
   -- Set default layout with ant design
+  -- for running backend and frontend smoothly npm i concurrently in backend
+  -- setup concurrently
