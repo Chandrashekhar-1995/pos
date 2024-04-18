@@ -10,7 +10,7 @@ const items = [
         stock: 10,
         isSaleDiscount: false,
         description: "",
-        imageUrl: ""
+        imageUrl: "https://smania.si/v1/interaktiven-zepni-robotek-minibot/product-img/slide-2.jpg"
     },
     {
         ietmCode: "2",
@@ -23,7 +23,7 @@ const items = [
         stock: 10,
         isSaleDiscount: false,
         description: "",
-        imageUrl: ""
+        imageUrl: "https://smania.si/v1/interaktiven-zepni-robotek-minibot/product-img/slide-2.jpg"
     },
     {
         ietmCode: "3",
@@ -36,7 +36,7 @@ const items = [
         stock: 10,
         isSaleDiscount: false,
         description: "",
-        imageUrl: ""
+        imageUrl: "https://smania.si/v1/interaktiven-zepni-robotek-minibot/product-img/slide-2.jpg"
     },
     {
         ietmCode: "4",
@@ -49,7 +49,7 @@ const items = [
         stock: 10,
         isSaleDiscount: false,
         description: "",
-        imageUrl: ""
+        imageUrl: "https://smania.si/v1/interaktiven-zepni-robotek-minibot/product-img/slide-2.jpg"
     },
     {
         ietmCode: "5",
@@ -62,7 +62,7 @@ const items = [
         stock: 10,
         isSaleDiscount: false,
         description: "SDFKJDKLJGVBJ KJSZDBHFJKVHBJDS",
-        imageUrl: ""
+        imageUrl: "https://smania.si/v1/interaktiven-zepni-robotek-minibot/product-img/slide-2.jpg"
     },
     {
         ietmCode: "6",
@@ -75,7 +75,7 @@ const items = [
         stock: 10,
         isSaleDiscount: false,
         description: "",
-        imageUrl: ""
+        imageUrl: "https://smania.si/v1/interaktiven-zepni-robotek-minibot/product-img/slide-2.jpg"
     },
     {
         ietmCode: "7",
@@ -88,7 +88,7 @@ const items = [
         stock: 10,
         isSaleDiscount: false,
         description: "",
-        imageUrl: ""
+        imageUrl: "https://smania.si/v1/interaktiven-zepni-robotek-minibot/product-img/slide-2.jpg"
     },
 ];
 
