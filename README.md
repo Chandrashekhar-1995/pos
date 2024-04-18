@@ -19,3 +19,5 @@
   -- for running backend and frontend smoothly npm i concurrently in backend
   -- setup concurrently
   -- setup redux store
+  -- add custom hook and fetch api
+  -- store items in redux store and select utem
