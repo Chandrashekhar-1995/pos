@@ -20,7 +20,7 @@ const DefaultLayout = ({ children }) => {
     setCollapsed(!collapsed);
   };
 
-  const items = [
+  const navMenu = [
     { label: <Link to="/">Home</Link>, icon: <HomeOutlined />, key: 'home' },
     { label: <Link to="/bills">Bills</Link>, icon: <CopyOutlined />, key: 'bills' },
     { label: <Link to="/items">Items</Link>, icon: <UnorderedListOutlined />, key: 'items' },
@@ -29,12 +29,12 @@ const DefaultLayout = ({ children }) => {
   ];
 
   return (
-    <Layout>
+    <Layout className='size-full'>
       <Sider trigger={null} collapsible collapsed={collapsed}>
         <div className="logo">
-          <h1 className="text-center text-light font-weight-bold mt-4">POS</h1>
+          <h1 className="text-center text-white font-bold m-4 text-2xl">SHEKHAR MOBILE</h1>
         </div>
-        <Menu mode="inline" theme="dark" items={items} />
+        <Menu mode="inline" theme="dark" items={navMenu} />
       </Sider>
       <Layout className="site-layout">
         <Header className="site-layout-background" style={{ padding: 0 }}>
