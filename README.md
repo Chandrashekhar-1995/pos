@@ -24,3 +24,4 @@
   -- create item Card and render in item List
   -- install @material-tailwind/react, apexcharts, react-apexcharts
   -- create pie and bar charts
+  -- add item in cart functionlity created
