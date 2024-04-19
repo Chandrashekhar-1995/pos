@@ -1,8 +1,8 @@
-import React from 'react'
-import DefaultLayout from '../components/DefaultLayout'
-import useGetItems from '../hooks/useGetItems'
-import { useSelector } from 'react-redux'
-import ItemList from '../components/ItemList'
+import React from 'react';
+import DefaultLayout from '../components/DefaultLayout';
+import useGetItems from '../hooks/useGetItems';
+import { useSelector } from 'react-redux';
+import ItemList from '../components/ItemList';
 
 
 const ItemPage = () => {

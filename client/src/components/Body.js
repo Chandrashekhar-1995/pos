@@ -5,7 +5,7 @@ import ItemPage from "../pages/ItemPage";
 
 function Body() {
   return (
-      <BrowserRouter>
+    <BrowserRouter>
         <Routes>
           <Route path="/" element={<HomePage/>} />
           <Route path="/items" element={<ItemPage/>} />

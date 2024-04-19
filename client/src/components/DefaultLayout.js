@@ -1,24 +1,13 @@
 import React, { useState } from 'react';
-import { Layout, Menu } from 'antd';
-import {
-  HomeOutlined,
-  CopyOutlined,
-  UnorderedListOutlined,
-  UserOutlined,
-  LogoutOutlined,
-  MenuUnfoldOutlined,
-  MenuFoldOutlined,
+import { Breadcrumb, Layout, Menu, theme } from 'antd';
+import { UserOutlined, UnorderedListOutlined, LogoutOutlined, HomeOutlined, CopyOutlined,
 } from '@ant-design/icons';
 import { Link } from 'react-router-dom';
+const { Header, Content, Footer, Sider } = Layout;
 
-const { Header, Sider, Content } = Layout;
-
-const DefaultLayout = ({ children }) => {
+const DefaultLayout  = ({children}) => {
   const [collapsed, setCollapsed] = useState(false);
-
-  const toggle = () => {
-    setCollapsed(!collapsed);
-  };
+  const { token: { colorBgContainer, borderRadiusLG }, } = theme.useToken();
 
   const navMenu = [
     { label: <Link to="/">Home</Link>, icon: <HomeOutlined />, key: 'home' },
@@ -28,34 +17,33 @@ const DefaultLayout = ({ children }) => {
     { label: 'Logout', icon: <LogoutOutlined />, key: 'logout' },
   ];
 
+  const toggle = () => {
+    setCollapsed(!collapsed);
+  };
+  
   return (
-    <Layout className='size-full'>
+    <Layout style={{ minHeight: '100vh', }}    >
       <Sider trigger={null} collapsible collapsed={collapsed}>
-        <div className="logo">
-          <h1 className="text-center text-white font-bold m-4 text-2xl">SHEKHAR MOBILE</h1>
+        <div className="demo-logo-vertical">
+        <h1 className="text-center text-white font-bold m-4 text-2xl">SHEKHAR MOBILE</h1>
         </div>
         <Menu mode="inline" theme="dark" items={navMenu} />
       </Sider>
+
       <Layout className="site-layout">
-        <Header className="site-layout-background" style={{ padding: 0 }}>
-          {React.createElement(collapsed ? MenuUnfoldOutlined : MenuFoldOutlined, {
-            className: 'trigger',
-            onClick: toggle,
-          })}
-        </Header>
-        <Content
-          className="site-layout-background"
-          style={{
-            margin: '24px 16px',
-            padding: 24,
-            minHeight: 280,
-          }}
-        >
+        <Header className="site-layout-background" style={{ padding: 0, background: colorBgContainer }} />
+        
+        
+        <Content style={{ margin: '0 16px',  }} >
+          <Breadcrumb style={{margin: '16px 0', }}>
+            <Breadcrumb.Item>User</Breadcrumb.Item>
+            <Breadcrumb.Item>Bill</Breadcrumb.Item>
+          </Breadcrumb>
           {children}
         </Content>
+        <Footer style={{ textAlign: 'center', }} > Ant Design ©{new Date().getFullYear()} Created by Ant UED </Footer>
       </Layout>
     </Layout>
   );
 };
-
 export default DefaultLayout;
