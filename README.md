@@ -22,3 +22,5 @@
   -- add custom hook and fetch api
   -- store items in redux store and select utem
   -- create item Card and render in item List
+  -- install @material-tailwind/react, apexcharts, react-apexcharts
+  -- create pie and bar charts
