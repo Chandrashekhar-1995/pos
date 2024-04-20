@@ -10,8 +10,9 @@ connectDB();
 // function seeder
 const importData = async () => {
     try {
-        await Item.deleteMany()
-        const itemsData = await Item.insertMany(items)
+        // await Item.deleteMany()
+        // const itemsData = await Item.insertMany(items)
+        await 
         console.log("Loading successfully");
     } catch (error) {
         console.log(error)

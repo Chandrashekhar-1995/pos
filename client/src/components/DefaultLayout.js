@@ -1,9 +1,11 @@
 import React, { useState } from 'react';
-import { Breadcrumb, Layout, Menu, theme } from 'antd';
-import { UserOutlined, UnorderedListOutlined, LogoutOutlined, HomeOutlined, CopyOutlined,
-} from '@ant-design/icons';
+import { Button, Layout, Menu, theme } from 'antd';
+import { UserOutlined, UnorderedListOutlined, LogoutOutlined, HomeOutlined, CopyOutlined, ShoppingCartOutlined, MenuFoldOutlined,
+  MenuUnfoldOutlined} from '@ant-design/icons';
 import { Link } from 'react-router-dom';
+import { useSelector } from "react-redux";
 const { Header, Content, Footer, Sider } = Layout;
+
 
 const DefaultLayout  = ({children}) => {
   const [collapsed, setCollapsed] = useState(false);
@@ -20,6 +22,8 @@ const DefaultLayout  = ({children}) => {
   const toggle = () => {
     setCollapsed(!collapsed);
   };
+
+  const cartItems = useSelector(store => store.cart.items)
   
   return (
     <Layout style={{ minHeight: '100vh', }}    >
@@ -31,17 +35,27 @@ const DefaultLayout  = ({children}) => {
       </Sider>
 
       <Layout className="site-layout">
-        <Header className="site-layout-background" style={{ padding: 0, background: colorBgContainer }} />
-        
+        <Header className="site-layout-background flex justify-between" style={{ padding: 0, background: colorBgContainer }}>
+        <Button
+            type="text"
+            icon={collapsed ? <MenuUnfoldOutlined /> : <MenuFoldOutlined />}
+            onClick={() => setCollapsed(!collapsed)}
+            style={{
+              fontSize: '16px',
+              width: 64,
+              height: 64,
+            }}
+          />
+          <div className='mr-12 flex'>
+          <Link to="/cart" ><ShoppingCartOutlined className='scale-150' /> </Link>
+            <p className='mx-2 font-bold'> {cartItems.length}</p>
+          </div>
+        </Header>      
         
         <Content style={{ margin: '0 16px',  }} >
-          <Breadcrumb style={{margin: '16px 0', }}>
-            <Breadcrumb.Item>User</Breadcrumb.Item>
-            <Breadcrumb.Item>Bill</Breadcrumb.Item>
-          </Breadcrumb>
           {children}
         </Content>
-        <Footer style={{ textAlign: 'center', }} > Ant Design ©{new Date().getFullYear()} Created by Ant UED </Footer>
+        <Footer style={{ textAlign: 'center', }} > Shekhar Mobile Shop ©{new Date().getFullYear()} Created by Chandra Shekhar </Footer>
       </Layout>
     </Layout>
   );

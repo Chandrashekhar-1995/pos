@@ -7,7 +7,7 @@ const ItemList = (item) => {
   const dispatch = useDispatch();
 
   const handleAddItem = (item) => {
-    console.log(item)
+    // console.log(item)
     dispatch(addItemsInCart(item))
   }
 

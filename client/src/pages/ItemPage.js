@@ -14,7 +14,6 @@ const ItemPage = () => {
   
   return (
     <DefaultLayout>
-      <h1>Itel page</h1>
       <div className='flex flex-wrap' >
         {items.map((item) => (<ItemList key={item.ietmCode} item={item}/>))}
       </div>
