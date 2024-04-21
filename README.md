@@ -25,3 +25,4 @@
   -- install @material-tailwind/react, apexcharts, react-apexcharts
   -- create pie and bar charts
   -- add item in cart functionlity created
+  - Today i can't code its a busy day
